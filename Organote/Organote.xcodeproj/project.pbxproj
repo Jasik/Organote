@@ -11,6 +11,9 @@
 		780E43D629EA75A800C214A1 /* NoteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E43D529EA75A800C214A1 /* NoteList.swift */; };
 		780E43D829EA75A900C214A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 780E43D729EA75A900C214A1 /* Assets.xcassets */; };
 		780E43DB29EA75A900C214A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 780E43DA29EA75A900C214A1 /* Preview Assets.xcassets */; };
+		780E43E529EA7E5F00C214A1 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E43E429EA7E5F00C214A1 /* Note.swift */; };
+		780E43EE29EA82D900C214A1 /* NoteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E43ED29EA82D900C214A1 /* NoteListViewModel.swift */; };
+		780E43F129EA8B4800C214A1 /* CreateOrEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E43F029EA8B4800C214A1 /* CreateOrEditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		780E43D529EA75A800C214A1 /* NoteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteList.swift; sourceTree = "<group>"; };
 		780E43D729EA75A900C214A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		780E43DA29EA75A900C214A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		780E43E429EA7E5F00C214A1 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		780E43ED29EA82D900C214A1 /* NoteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewModel.swift; sourceTree = "<group>"; };
+		780E43F029EA8B4800C214A1 /* CreateOrEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrEditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +57,10 @@
 		780E43D229EA75A800C214A1 /* Organote */ = {
 			isa = PBXGroup;
 			children = (
+				780E43EA29EA822E00C214A1 /* Screens */,
+				780E43E229EA79F200C214A1 /* Models */,
 				780E43E129EA78C400C214A1 /* Resources */,
 				780E43D329EA75A800C214A1 /* OrganoteApp.swift */,
-				780E43D529EA75A800C214A1 /* NoteList.swift */,
 				780E43D929EA75A900C214A1 /* Preview Content */,
 			);
 			path = Organote;
@@ -73,6 +80,48 @@
 				780E43D729EA75A900C214A1 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		780E43E229EA79F200C214A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				780E43E429EA7E5F00C214A1 /* Note.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		780E43EA29EA822E00C214A1 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				780E43EF29EA8A4700C214A1 /* CreateAndEdit */,
+				780E43EB29EA824100C214A1 /* NoteList */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		780E43EB29EA824100C214A1 /* NoteList */ = {
+			isa = PBXGroup;
+			children = (
+				780E43EC29EA82A400C214A1 /* ViewModel */,
+				780E43D529EA75A800C214A1 /* NoteList.swift */,
+			);
+			path = NoteList;
+			sourceTree = "<group>";
+		};
+		780E43EC29EA82A400C214A1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				780E43ED29EA82D900C214A1 /* NoteListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		780E43EF29EA8A4700C214A1 /* CreateAndEdit */ = {
+			isa = PBXGroup;
+			children = (
+				780E43F029EA8B4800C214A1 /* CreateOrEditView.swift */,
+			);
+			name = CreateAndEdit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +194,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				780E43F129EA8B4800C214A1 /* CreateOrEditView.swift in Sources */,
+				780E43EE29EA82D900C214A1 /* NoteListViewModel.swift in Sources */,
 				780E43D629EA75A800C214A1 /* NoteList.swift in Sources */,
 				780E43D429EA75A800C214A1 /* OrganoteApp.swift in Sources */,
+				780E43E529EA7E5F00C214A1 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
