@@ -11,7 +11,7 @@ import SwiftUI
 struct OrganoteApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NoteList()
         }
     }
 }

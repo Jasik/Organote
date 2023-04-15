@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		780E43D429EA75A800C214A1 /* OrganoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E43D329EA75A800C214A1 /* OrganoteApp.swift */; };
-		780E43D629EA75A800C214A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E43D529EA75A800C214A1 /* ContentView.swift */; };
+		780E43D629EA75A800C214A1 /* NoteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E43D529EA75A800C214A1 /* NoteList.swift */; };
 		780E43D829EA75A900C214A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 780E43D729EA75A900C214A1 /* Assets.xcassets */; };
 		780E43DB29EA75A900C214A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 780E43DA29EA75A900C214A1 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		780E43D029EA75A800C214A1 /* Organote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Organote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		780E43D329EA75A800C214A1 /* OrganoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganoteApp.swift; sourceTree = "<group>"; };
-		780E43D529EA75A800C214A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		780E43D529EA75A800C214A1 /* NoteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteList.swift; sourceTree = "<group>"; };
 		780E43D729EA75A900C214A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		780E43DA29EA75A900C214A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,9 +51,9 @@
 		780E43D229EA75A800C214A1 /* Organote */ = {
 			isa = PBXGroup;
 			children = (
+				780E43E129EA78C400C214A1 /* Resources */,
 				780E43D329EA75A800C214A1 /* OrganoteApp.swift */,
-				780E43D529EA75A800C214A1 /* ContentView.swift */,
-				780E43D729EA75A900C214A1 /* Assets.xcassets */,
+				780E43D529EA75A800C214A1 /* NoteList.swift */,
 				780E43D929EA75A900C214A1 /* Preview Content */,
 			);
 			path = Organote;
@@ -65,6 +65,14 @@
 				780E43DA29EA75A900C214A1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		780E43E129EA78C400C214A1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				780E43D729EA75A900C214A1 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				780E43D629EA75A800C214A1 /* ContentView.swift in Sources */,
+				780E43D629EA75A800C214A1 /* NoteList.swift in Sources */,
 				780E43D429EA75A800C214A1 /* OrganoteApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
