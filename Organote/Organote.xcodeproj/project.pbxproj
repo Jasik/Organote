@@ -14,6 +14,7 @@
 		780E43E529EA7E5F00C214A1 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E43E429EA7E5F00C214A1 /* Note.swift */; };
 		780E43EE29EA82D900C214A1 /* NoteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E43ED29EA82D900C214A1 /* NoteListViewModel.swift */; };
 		780E43F129EA8B4800C214A1 /* CreateOrEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E43F029EA8B4800C214A1 /* CreateOrEditView.swift */; };
+		780E43F429EB7F9800C214A1 /* NoteDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E43F329EB7F9800C214A1 /* NoteDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		780E43E429EA7E5F00C214A1 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		780E43ED29EA82D900C214A1 /* NoteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewModel.swift; sourceTree = "<group>"; };
 		780E43F029EA8B4800C214A1 /* CreateOrEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrEditView.swift; sourceTree = "<group>"; };
+		780E43F329EB7F9800C214A1 /* NoteDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		780E43EA29EA822E00C214A1 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				780E43F229EB7F7D00C214A1 /* NoteDetail */,
 				780E43EF29EA8A4700C214A1 /* CreateAndEdit */,
 				780E43EB29EA824100C214A1 /* NoteList */,
 			);
@@ -122,6 +125,14 @@
 				780E43F029EA8B4800C214A1 /* CreateOrEditView.swift */,
 			);
 			name = CreateAndEdit;
+			sourceTree = "<group>";
+		};
+		780E43F229EB7F7D00C214A1 /* NoteDetail */ = {
+			isa = PBXGroup;
+			children = (
+				780E43F329EB7F9800C214A1 /* NoteDetail.swift */,
+			);
+			path = NoteDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +209,7 @@
 				780E43EE29EA82D900C214A1 /* NoteListViewModel.swift in Sources */,
 				780E43D629EA75A800C214A1 /* NoteList.swift in Sources */,
 				780E43D429EA75A800C214A1 /* OrganoteApp.swift in Sources */,
+				780E43F429EB7F9800C214A1 /* NoteDetail.swift in Sources */,
 				780E43E529EA7E5F00C214A1 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
