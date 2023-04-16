@@ -39,7 +39,8 @@ private extension NoteList {
                 .font(.title3)
                 .frame(maxWidth: .infinity, alignment: .leading)
             
-            Text(note.createDate.formatted(date: .omitted, time: .omitted))
+            Text(note.createDate.formatted(date: .numeric, time: .shortened))
+                .font(.footnote)
         }
     }
     
