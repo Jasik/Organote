@@ -12,7 +12,6 @@ struct NoteDetail: View {
     let note: Note
     
     var body: some View {
-        NavigationView {
             VStack(alignment: .leading, spacing: 30) {
                 Text(note.createDate.formatted(date: .numeric, time: .shortened))
                     .font(.caption2)
@@ -23,8 +22,6 @@ struct NoteDetail: View {
             }
             .padding(.horizontal)
             .navigationTitle(note.title)
-            .navigationBarTitleDisplayMode(.inline)
-        }
     }
 }
 
