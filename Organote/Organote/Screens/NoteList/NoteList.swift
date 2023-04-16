@@ -18,10 +18,13 @@ struct NoteList: View {
                 if viewModel.notes.isEmpty {
                     Text("no notes yet")
                 } else {
-                    List(viewModel.notes) { note in
-                        NavigationLink(value: note) {
-                            noteRow(note)
+                    List {
+                        ForEach(viewModel.notes) { note in
+                            NavigationLink(value: note) {
+                                noteRow(note)
+                            }
                         }
+                        .onDelete(perform: viewModel.deleteNote(indexAt:))
                     }
                 }
             }
