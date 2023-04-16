@@ -14,8 +14,16 @@ struct NoteList: View {
     
     var body: some View {
         NavigationView {
-            List(viewModel.notes) { note in
-                noteRow(note)
+            VStack {
+                if viewModel.notes.isEmpty {
+                    Text("no notes yet")
+                } else {
+                    List(viewModel.notes) { note in
+                        NavigationLink(destination: NoteDetail(note: note)) {
+                            noteRow(note)
+                        }
+                    }
+                }
             }
             .navigationTitle("Notes")
             .toolbar {
@@ -39,7 +47,8 @@ private extension NoteList {
                 .font(.title3)
                 .frame(maxWidth: .infinity, alignment: .leading)
             
-            Text(note.createDate.formatted(date: .omitted, time: .omitted))
+            Text(note.createDate.formatted(date: .numeric, time: .shortened))
+                .font(.footnote)
         }
     }
     
