@@ -19,13 +19,16 @@ struct NoteList: View {
                     Text("no notes yet")
                 } else {
                     List(viewModel.notes) { note in
-                        NavigationLink(destination: NoteDetail(note: note)) {
+                        NavigationLink(value: note) {
                             noteRow(note)
                         }
                     }
                 }
             }
             .navigationTitle("Notes")
+            .navigationDestination(for: Note.self) { note in
+                NoteDetail(note: note)
+            }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     add
