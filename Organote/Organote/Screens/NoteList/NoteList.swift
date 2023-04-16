@@ -13,7 +13,7 @@ struct NoteList: View {
     @State private var isShowingCreateNoteView: Bool = false
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
                 if viewModel.notes.isEmpty {
                     Text("no notes yet")
