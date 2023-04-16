@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Note: Identifiable, Equatable {
+struct Note: Identifiable, Equatable, Hashable {
     let id: UUID
     let createDate: Date
     let title: String

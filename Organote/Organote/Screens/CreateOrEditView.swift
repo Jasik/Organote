@@ -17,7 +17,7 @@ struct CreateOrEditView: View {
     var onNoteCreated: (Note) -> Void
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             Form {
                 titleField
                 noteField

@@ -13,19 +13,25 @@ struct NoteList: View {
     @State private var isShowingCreateNoteView: Bool = false
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
                 if viewModel.notes.isEmpty {
                     Text("no notes yet")
                 } else {
-                    List(viewModel.notes) { note in
-                        NavigationLink(destination: NoteDetail(note: note)) {
-                            noteRow(note)
+                    List {
+                        ForEach(viewModel.notes) { note in
+                            NavigationLink(value: note) {
+                                noteRow(note)
+                            }
                         }
+                        .onDelete(perform: viewModel.deleteNote(indexAt:))
                     }
                 }
             }
             .navigationTitle("Notes")
+            .navigationDestination(for: Note.self) { note in
+                NoteDetail(note: note)
+            }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     add
