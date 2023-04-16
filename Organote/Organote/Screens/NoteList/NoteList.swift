@@ -16,6 +16,11 @@ struct NoteList: View {
         NavigationView {
             List(viewModel.notes) { note in
                 noteRow(note)
+                    List(viewModel.notes) { note in
+                        NavigationLink(destination: NoteDetail(note: note)) {
+                            noteRow(note)
+                        }
+                    }
             }
             .navigationTitle("Notes")
             .toolbar {
